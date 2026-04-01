@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV Portofolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        background: linear-gradient(135deg, #e8dac5, #8d7968);
+        color: #333;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 30px auto;
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .header {
+        text-align: center;
+        padding: 30px;
+        background: linear-gradient(135deg, #7aa8c7, #596d7c);
+        color: white;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 4px solid white;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    .section {
+        padding: 20px 30px;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background: #7aa8c7;
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        color: #350a0a;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+    h2 {
+        margin-bottom: 10px;
+        color: #350a0a;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .card {
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .skill span {
+        display: inline-block;
+        background: #81c9ed;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    .portfolio img {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+        font-size: 12px;
+        background: #eee;
+    }
+
+    @media(max-width: 700px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <nav class="navbar">
+        <a href="#bio">Biodata</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#pendidikan">Pendidikan</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#portofolio">Portofolio</a>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="header">
+        <img src="images/raisacantik.jpg" class="profile-img">
+        <h1>Raisya Gayatri</h1>
+        <p>Cv. lamaran kerja</p>
+    </div>
+
+    <!-- BIODATA -->
+    <div class="section" id="bio">
+        <h2>Biodata</h2>
+        <div class="grid">
+            <div class="card">Nama: Raisya Gayatri</div>
+            <div class="card">TTL: BanjarNegara, 10-09-2010</div>
+            <div class="card">Alamat: Gunungjati rt03/rw02, Pagedongan, Banjarnegara</div>
+            <div class="card">Email: <a href="mailto:resagytr@gmail.com">resagytr@gmail.com</a></div>
+            <div class="card">Github: <a href="https://github.com/resaagytri-stack" target="_blank" rel="noopener noreferrer">github.com/resaagytri-stack</a></div>
+            <div class="card">Instagram: <a href="https://www.instagram.com/_raisyatri/" target="_blank" rel="noopener noreferrer">@_raisyatri</a></div>
+        </div>
+    </div>
+
+    <!-- TENTANG -->
+    <div class="section" id="tentang">
+        <h2>Tentang Saya</h2>
+        <p>
+            Saya adalah siswa pplg yang memiliki minat dalam bidang teknologi dan desain. 
+            Saya senang belajar hal baru dan selalu berusaha untuk meningkatkan keterampilan saya. 
+            Saya percaya bahwa dengan kerja keras dan dedikasi, saya dapat mencapai tujuan saya di masa depan.
+        </p>
+    </div>
+
+    <!-- RIWAYAT SEKOLAH -->
+    <div class="section" id="pendidikan">
+        <h2>Riwayat Pendidikan</h2>
+        <div class="card">
+            <p>SMK Negeri 1 Bawang (2025- 2028)<br>Jurusan: RPL</p>
+            <p>MTS Raudlotut Tholibin (2022 - 2025)</p>
+            <p>SD Negeri 2 Gunungjati (2016 - 2022)</p>
+        </div>
+    </div>
+
+    <!-- PENGALAMAN -->
+    <div class="section" id="pengalaman">
+        <h2>Pengalaman</h2>
+        <div class="card">
+            <p><b>Organisasi Sekolah</b><br> Osis : seksi kebersihan (2023 - 2024)</p>
+            <p><b>Project Sekolah</b><br>Belum ada</p>
+        </div>
+    </div>
+
+    <!-- SKILL -->
+    <div class="section" id="keahlian">
+        <h2>Keahlian</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Softskill</h3>
+                <ul>
+                    <li>Komunikasi baik</li>
+                    <li>bisa memanajemen waktu</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Hardskill</h3>
+                <ul>
+                    <li>membuat rancangan di Figma</li>
+                    <li>membuat desain di Canva</li>
+                    <li>membuat logo dengan corelDRAW</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- PORTOFOLIO -->
+    <div class="section portfolio" id="portofolio">
+        <h2>Portofolio</h2>
+        <div class="grid">
+            <div class="card">
+                <a href="https://www.figma.com/design/4enZ2tMzjYNM5kZt9dH6T6/PSAS_Raisya-GAyatri?node-id=0-1&t=cdLWQxaU50iKQ04F-1" target="_blank" style="text-decoration: none; color: inherit;">
+                    <p>Project figma</p>
+                    <img src="https://www.figma.com/file/4enZ2tMzjYNM5kZt9dH6T6/thumbnail" alt="Project figma" style="width: 100%; border-radius: 10px; margin-top: 10px;">
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.figma.com/design/bVCjSvHNUdWWdyMpNmAyrv/Untitled?t=cdLWQxaU50iKQ04F-1" target="_blank" style="text-decoration: none; color: inherit;">
+                    <p>Desain Shopee</p>
+                    <img src="https://www.figma.com/file/bVCjSvHNUdWWdyMpNmAyrv/thumbnail" alt="Desain Shopee" style="width: 100%; border-radius: 10px; margin-top: 10px;">
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://canva.link/cqcwx5dltbsq451" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <p>Packaging Canva</p>
+                    <img src="https://images.ctfassets.net/abcdef/your-canva-thumbnail.jpg" alt="Packaging Canva" style="width: 100%; border-radius: 10px; margin-top: 10px;">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 Raisya Gayatri. All rights reserved.
+    </footer>
+
+</div>
+
+</body>
+</html>
