@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Login Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffcee3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            background: rgb(255, 201, 236);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #874a7f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #4b0d2d;
+        }
+
+        #hasil {
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Masukkan Username">
+    <input type="password" id="password" placeholder="Masukkan Password">
+    <button onclick="cekLogin()">Login</button>
+    <div id="hasil"></div>
+</div>
+
+<script>
+    function cekLogin() {
+        // username & password yang benar
+        let userBenar = "raisya.archive";
+        let passBenar = "102713";
+
+        // ambil input user
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+
+        let hasil = document.getElementById("hasil");
+
+        // pengecekan
+        if (username === userBenar && password === passBenar) {
+            hasil.style.color = "green";
+            hasil.innerHTML = "Password benar ✅";
+        } else {
+            hasil.style.color = "red";
+            hasil.innerHTML = "Password salah ❌";
+        }
+    }
+</script>
+
+</body>
+</html>
